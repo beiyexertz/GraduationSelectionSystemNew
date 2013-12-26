@@ -48,6 +48,8 @@ namespace GraduationSelectionSystemNew
                     string LoginType = LoginDS.Tables[0].Rows[0]["userRight"].ToString();
                     TextLabel.Text = "登陆成功";
                     Session["UserName"] = LoginDS.Tables[0].Rows[0]["userID"];
+                    Session["UserRight"] = LoginType;
+                    Session["schoolID"] = LoginDS.Tables[0].Rows[0]["schoolID"];
                     if (PassWord1 == "123456")
                     {
                         Response.Redirect("ChangeProfile.aspx");

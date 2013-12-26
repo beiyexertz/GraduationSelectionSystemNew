@@ -73,14 +73,50 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddTitle.aspx" />
+    <Content Include="ChangeProfile.aspx" />
+    <Content Include="ChooseAllTitle.aspx" />
     <Content Include="ErrorPage.aspx" />
+    <Content Include="images\header-bg.jpg" />
     <Content Include="index.aspx" />
+    <Content Include="MyChosenTitle.aspx" />
+    <Content Include="ShowDetailTitle.aspx" />
+    <Content Include="StudentMyProfile.aspx" />
+    <Content Include="Site1.css" />
     <Content Include="StudentLogin.aspx" />
+    <Content Include="TeacherLogin.aspx" />
+    <Content Include="TeacherMyProfile.aspx" />
+    <Content Include="VerfiyPass.aspx" />
+    <Content Include="ViewAllMyTitle.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTitle.aspx.cs">
+      <DependentUpon>AddTitle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTitle.aspx.designer.cs">
+      <DependentUpon>AddTitle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeProfile.aspx.cs">
+      <DependentUpon>ChangeProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeProfile.aspx.designer.cs">
+      <DependentUpon>ChangeProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseAllTitle.aspx.cs">
+      <DependentUpon>ChooseAllTitle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChooseAllTitle.aspx.designer.cs">
+      <DependentUpon>ChooseAllTitle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chooseTitle.ashx.cs">
+      <DependentUpon>chooseTitle.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Dao\DatabaseHandler.cs" />
     <Compile Include="ErrorPage.aspx.cs">
       <DependentUpon>ErrorPage.aspx</DependentUpon>
@@ -95,6 +131,27 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyChosenTitle.aspx.cs">
+      <DependentUpon>MyChosenTitle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyChosenTitle.aspx.designer.cs">
+      <DependentUpon>MyChosenTitle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowDetailTitle.aspx.cs">
+      <DependentUpon>ShowDetailTitle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowDetailTitle.aspx.designer.cs">
+      <DependentUpon>ShowDetailTitle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMyProfile.aspx.cs">
+      <DependentUpon>StudentMyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentMyProfile.aspx.designer.cs">
+      <DependentUpon>StudentMyProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainPage.Master.cs">
@@ -111,10 +168,39 @@
     <Compile Include="StudentLogin.aspx.designer.cs">
       <DependentUpon>StudentLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TeacherLogin.aspx.cs">
+      <DependentUpon>TeacherLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherLogin.aspx.designer.cs">
+      <DependentUpon>TeacherLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherMyProfile.aspx.cs">
+      <DependentUpon>TeacherMyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherMyProfile.aspx.designer.cs">
+      <DependentUpon>TeacherMyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerfiyPass.aspx.cs">
+      <DependentUpon>VerfiyPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerfiyPass.aspx.designer.cs">
+      <DependentUpon>VerfiyPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllMyTitle.aspx.cs">
+      <DependentUpon>ViewAllMyTitle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAllMyTitle.aspx.designer.cs">
+      <DependentUpon>ViewAllMyTitle.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="MainPage.Master" />
+    <Content Include="chooseTitle.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
